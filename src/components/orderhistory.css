@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:display=swap');
+
+.order-history-container {
+    width: 100%;
+    height: 79vmin;
+}
+
+.order-history-header {
+    display: inline-flex;
+}
+
+.order-history-header button {
+    border: 0;
+    background: transparent;
+    opacity: 50%;
+}
+
+.order-history-header h4 {
+    font-size: 22pt;
+    font-weight: 600;
+}
+
+.order-history-navigation-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.order-history-navigation-bar ul li button {
+    border: 0;
+    background: transparent;
+    font-size: 20pt;
+}
+
+.order-history-navigation-bar ul li button:focus {
+    border-bottom: 2px solid #FF7020;
+    color: #FF7020;
+}
+
+.navigation-btn-93w {
+    width: 115px;
+}
+
+.navigation-btn-127w {
+    width: 150px;
+}
+
+.order-history-body {
+    background-color: #DADADA;
+    height: 100%;
+}
+
+.order-history-search-bar {
+    width: 90%;
+    margin: auto;
+    border: 1px gray solid;
+    border-radius: 10px;
+    height: 8vh;
+    background-color: white;
+    position: relative;
+    top: 40px;
+}
+
+.order-history-search-bar button {
+    background: transparent;
+    border: 0;
+    height: 100%;
+    width: 5%;
+    opacity: 50%;
+}
+
+.order-history-search-bar button img {
+    width: 30px;
+    height: 30px;
+}
+
+.order-history-search-bar input {
+    width: 90%;
+    height: 90%;
+    border: 0;
+    font-size: 17pt;
+}
+
+.order-history-search-bar input:focus {
+    outline: 0;
+}

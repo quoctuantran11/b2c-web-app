@@ -1,0 +1,66 @@
+.header-container {
+    width: 100%;
+    height: 80px;
+    background-color: #FFFCE5;
+
+    display: inline-flex;
+}
+
+.header-container > * {
+    margin: auto 2vw;
+}
+
+.header-leftcontent form {
+    width: fit-content;
+    border-bottom: #FF7020 1px solid;
+}
+
+.header-leftcontent input,
+.header-leftcontent button {
+    border: 0;
+    background: transparent;
+}
+
+.header-leftcontent input::placeholder {
+    font-style: italic;
+    color: #FF7020;
+}
+
+.header-leftcontent input:focus {
+    outline: none;
+}
+
+.header-center {
+    margin: auto !important;
+}
+
+.header-rightcontent {
+    display: inline-flex;
+}
+
+.header-rightcontent button {
+    border: 0;
+    background: transparent;
+    color: #FF7020;
+    font-weight: 550;
+}
+
+#header-account img {
+    width: 30px;
+    height: 30px;
+}
+
+#header-cart {
+    color: black !important;
+}
+
+#header-cart img {
+    width: 45px;
+    height: 45px;
+}
+
+#header-cart span {
+    position: absolute;
+    right: 3.7vw;
+    top: 4.3vh;
+}
