@@ -1,9 +1,13 @@
-import './orderhistory.css';
+import { useState } from 'react';
 import arrow_back from '../assets/image/arrow_back.svg'
 import search_icon from '../assets/image/search_black.svg'
 import expand_less from '../assets/image/expand_less.svg'
+import expand_more from '../assets/image/expand_more.svg'
 
 function OrderHistory() {
+  const [expandItem, setExpandItem] = useState(false)
+  const [expandDetail, setExpandDetail] = useState(false)
+
   return (
     <div className="order-history-container">
       <div className='order-history-header'>
@@ -60,24 +64,30 @@ function OrderHistory() {
             <div className='detail-grid'>
               <div className='detail-product-name grid-child'>
                 <p><b>3</b> x Cải xoăn</p>
-                <p><b>2</b> x Cải xoăn</p>
+                <p className='hidden-content' style={{maxHeight: expandItem ? '20px' : 0}}>
+                  <b>2</b> x Cải xoăn
+                </p>
               </div>
               <div className='detail-product-price grid-child'>
                 <p>VND 40,000</p>
-                <p>VND 20,000</p>
+                <p className='hidden-content' style={{maxHeight: expandItem ? '20px' : 0}}>VND 20,000</p>
               </div>
             </div>
-            <h4><button className='btn-link-center'>Thu gọn</button></h4>
+            {!expandItem ? 
+            <button onClick={() => setExpandItem(!expandItem)} className='btn-link-center'>Xem thêm sản phẩm</button>
+            : <button onClick={() => setExpandItem(!expandItem)} className='btn-link-center'>Thu gọn</button>}
           </div>
           <div className='order-history-detail-price'>
             <div className='order-history-detail'>
               <div className='detail-grid'>
-                <div className='detail-product-name grid-child'>
+                <div className='detail-product-name grid-child hidden-content'
+                  style={{maxHeight: expandDetail ? '150px' : 0}}>
                   <p>Tổng tiền hàng</p>
                   <p>Phí vận chuyển</p>
                   <p>Giảm giá</p>
                 </div>
-                <div className='detail-product-price grid-child'>
+                <div className='detail-product-price grid-child hidden-content'
+                  style={{maxHeight: expandDetail ? '150px' : 0}}>
                   <p>VND 160,000</p>
                   <p>VND 25,000</p>
                   <p className="light orange">-VND 50,000</p>
@@ -91,9 +101,12 @@ function OrderHistory() {
                 </div>
                 <div className='detail-product-price grid-child total-price'>
                   <p className='strong orange'>Tổng cộng: VND 135,000</p>
-                  <button>
-                    <img src={expand_less} alt="expand" />
+                  {!expandDetail ? <button onClick={() => setExpandDetail(!expandDetail)}>
+                    <img src={expand_more} alt="expand" />
                   </button>
+                  :<button onClick={() => setExpandDetail(!expandDetail)}>
+                  <img src={expand_less} alt="expand" />
+                </button>}
                 </div>
               </div>
             </div>

@@ -12,6 +12,7 @@
     border: 0;
     background: transparent;
     opacity: 50%;
+    margin-left: 3vh;
 }
 
 .order-history-header h3 {
@@ -150,6 +151,11 @@
     margin: 0 50px;
 }
 
+.detail-grid .hidden-content {
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
 .detail-product-price {
     text-align: right;
 }
@@ -157,8 +163,9 @@
 .btn-link-center {
     border: 0;
     background-color: transparent;
-    margin-left: 45vw;
     color: #F68D1E;
+    display: block;
+    margin: 0 auto;
 }
 
 .orange {
