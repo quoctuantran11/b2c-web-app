@@ -10,7 +10,7 @@ function OrderHistory() {
         <button>
           <img src={arrow_back} alt="back" />
         </button>
-        <h4>Order History</h4>
+        <h3>Order History</h3>
       </div>
       <div className='order-history-navigation-bar'>
         <ul>
@@ -40,6 +40,7 @@ function OrderHistory() {
         </form>
         <div className='order-history-orderlist'>
           <table>
+            <tbody>
             <tr>
               <td className='order-history-orderTitle'>Mã đơn hàng:</td>
               <td className='order-history-orderContent orderId'>8550491</td>
@@ -52,6 +53,7 @@ function OrderHistory() {
               <td className='order-history-orderTitle'>Thông tin KH:</td>
               <td className='order-history-orderContent'>Thảo Anh - 98/1B Bạch Đằng, Phường 2, Quận Tân Bình, TP.HCM</td>
             </tr>
+            </tbody>
           </table>
           <p className='order-history-orderTitle'>Thông tin đơn hàng:</p>
           <div className='order-history-detail'>
