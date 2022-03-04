@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:display=swap');
-
 .order-history-container {
     width: 100%;
     height: 79vmin;
@@ -27,6 +25,10 @@
     list-style: none;
 }
 
+.order-history-navigation-bar ul li {
+    position: relative;
+}
+
 .order-history-navigation-bar ul li button {
     border: 0;
     background: transparent;
@@ -46,6 +48,21 @@
     width: 150px;
 }
 
+.quantity-notification {
+    width: 25px;
+    height: 18px;
+    border-radius: 5px;
+    background-color: #DE780E;
+    color: #ffffff;
+    font-size: 10pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -2vh;
+    right: -2vw;
+}
+
 .order-history-body {
     background-color: #DADADA;
     height: 100%;
@@ -53,13 +70,12 @@
 
 .order-history-search-bar {
     width: 90%;
-    margin: auto;
     border: 1px gray solid;
     border-radius: 10px;
     height: 8vh;
     background-color: white;
-    position: relative;
-    top: 40px;
+    display: inline-flex;
+    margin: 20px auto;
 }
 
 .order-history-search-bar button {
@@ -76,7 +92,7 @@
 }
 
 .order-history-search-bar input {
-    width: 90%;
+    width: 93%;
     height: 90%;
     border: 0;
     font-size: 17pt;
@@ -84,4 +100,87 @@
 
 .order-history-search-bar input:focus {
     outline: 0;
+}
+
+.order-history-orderlist {
+    background: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.order-history-orderlist table {
+    position: relative;
+    top: 10px;
+}
+
+.order-history-orderlist table td {
+    padding: 10px 20px;
+}
+
+.order-history-orderTitle {
+    font-weight: 300;
+    font-size: 16pt;
+    color: #979797;
+}
+
+.order-history-orderContent {
+    padding-left: 100px !important;
+    font-weight: 600;
+    font-size: 18pt;
+}
+
+.orderId {
+    color: #FF7020;
+}
+
+.order-history-orderlist p.order-history-orderTitle {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.order-history-detail {   
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 50px;
+}
+
+.detail-product-price {
+    text-align: right;
+}
+
+.btn-link-center {
+    border: 0;
+    background-color: transparent;
+    margin-left: 45vw;
+    color: #F68D1E;
+}
+
+.orange {
+    color: #F68D1E;
+}
+
+.strong {
+    font-weight: 700;
+}
+
+.total-price {
+    display: flex;
+}
+
+.total-price > p {
+    flex: 9;
+}
+
+.total-price > * {
+    padding: 0;
+}
+
+.total-price button {
+    border: 0;
+    background-color: transparent;
+    margin-right: -2vw;
 }
