@@ -111,23 +111,25 @@
     height: 65vh;
 }
 
-.order-history-orderlist table {
-    position: relative;
-    top: 10px;
-}
-
-.order-history-orderlist table td {
-    padding: 10px 20px;
-}
-
 .order-history-orderTitle {
+    width: 30%;
+    float: left;
+}
+
+.order-history-orderTitle p,
+.order-history-detailTitle {
     font-weight: 300;
     font-size: 16pt;
     color: #979797;
+    margin-left: 2vw;
 }
 
 .order-history-orderContent {
-    padding-left: 100px !important;
+    width: 70%;
+    float: right;
+}
+
+.order-history-orderContent p {
     font-weight: 600;
     font-size: 18pt;
 }
