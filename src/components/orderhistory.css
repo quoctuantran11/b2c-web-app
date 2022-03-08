@@ -130,7 +130,7 @@
 }
 
 .order-history-orderContent p {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18pt;
 }
 
@@ -160,6 +160,11 @@
 
 .detail-product-price {
     text-align: right;
+}
+
+.detail-product-name p,
+.detail-product-price p {
+    font-size: 16pt;
 }
 
 .btn-link-center {
@@ -196,3 +201,56 @@
     margin-right: -2vw;
 }
 
+/*---------------------------------Mobile phone----------------------------------*/
+@media screen and (max-width: 414px) {
+    .order-history-navigation-bar ul {
+        padding: 0;
+    }
+
+    .order-history-navigation-bar ul li button {
+        font-size: 14pt;
+        padding: 0;
+        width: 100%;
+    }
+
+    .quantity-notification {
+        top: -3vh;
+        right: -5vw;
+    }
+
+    .order-history-search-bar {
+        height: 10vh;
+    }
+
+    .order-history-search-bar input::placeholder {
+        font-size: 11pt;
+        padding-left: 3vw;
+    }
+
+    .order-history-search-bar button img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .order-history-orderTitle {
+        width: 40%;
+    }
+
+    .order-history-orderTitle p,
+    .order-history-detailTitle {
+        font-size: 12pt;
+    }
+
+    .order-history-orderContent p {
+        font-size: 11pt;
+    }
+
+    .order-history-orderContent {
+        width: 60%;
+    }
+    
+    .detail-product-name p,
+    .detail-product-price p {
+        font-size: 12pt;
+    }
+}

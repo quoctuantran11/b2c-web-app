@@ -63,23 +63,23 @@ function OrderHistory() {
         <button>
           <img src={arrow_back} alt="back" />
         </button>
-        <h3>{t("title")}</h3>
+        <h3>Order history</h3>
       </div>
       <div className='order-history-navigation-bar'>
         <ul>
           <li>
-            <button className='navigation-btn-93w'>{t("navigation.new")}</button>
+            <button className='navigation-btn-93w'>New</button>
             <div className='quantity-notification'>1</div>
           </li>
           <li>
-            <button className='navigation-btn-127w'>{t("navigation.inProcess")}</button>
+            <button className='navigation-btn-127w'>In process</button>
             <div className='quantity-notification'>3</div>
           </li>
           <li>
-            <button className='navigation-btn-127w'>{t("navigation.completed")}</button>
+            <button className='navigation-btn-127w'>Completed</button>
           </li>
           <li>
-            <button className='navigation-btn-127w'>{t("navigation.cancelled")}</button>
+            <button className='navigation-btn-127w'>Cancelled</button>
           </li>
         </ul>
       </div>
@@ -107,13 +107,13 @@ function OrderHistory() {
             <div className='detail-grid'>
               <div className='detail-product-name grid-child'>
                 <p><b>3</b> x Cải xoăn</p>
-                <p className='hidden-content' style={{ maxHeight: expandItem ? '20px' : 0 }}>
+                <p className='hidden-content' style={{ maxHeight: expandItem ? '30px' : 0 }}>
                   <b>2</b> x Cải xoăn
                 </p>
               </div>
               <div className='detail-product-price grid-child'>
                 <p>VND 40,000</p>
-                <p className='hidden-content' style={{ maxHeight: expandItem ? '20px' : 0 }}>VND 20,000</p>
+                <p className='hidden-content' style={{ maxHeight: expandItem ? '30px' : 0 }}>VND 20,000</p>
               </div>
             </div>
             {!expandItem ?
@@ -143,7 +143,7 @@ function OrderHistory() {
                   <p>5 sản phẩm</p>
                 </div>
                 <div className='detail-product-price grid-child total-price'>
-                  <p className='strong orange'>Tổng cộng: VND 135,000</p>
+                  <p>Tổng cộng:</p> <p className='strong orange'>VND 135,000</p>
                   {!expandDetail ? <button onClick={() => setExpandDetail(!expandDetail)}>
                     <img src={expand_more} alt="expand" />
                   </button>
