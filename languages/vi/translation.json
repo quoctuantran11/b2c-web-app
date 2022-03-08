@@ -1,0 +1,9 @@
+{
+    "title": "Lịch sử mua hàng",
+    "navigation": {
+      "new": "Mới",
+      "inProcess": "Đang xử lý",
+      "completed": "Hoàn thành",
+      "cancelled": "Đã hủy"
+    }
+}

@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/b2c-web-app/static/css/main.988dcb0c.css",
-    "main.js": "/b2c-web-app/static/js/main.3941bff7.js",
+    "main.css": "/b2c-web-app/static/css/main.7fb3a447.css",
+    "main.js": "/b2c-web-app/static/js/main.b14afa51.js",
     "index.html": "/b2c-web-app/index.html",
     "static/media/search_black.svg": "/b2c-web-app/static/media/search_black.6c95e853cf5a1eedd6e285cecedda3a3.svg",
     "static/media/search_orange.svg": "/b2c-web-app/static/media/search_orange.a32587a80afbcb33695405beaf8210df.svg",
+    "static/media/getFetch.cjs": "/b2c-web-app/static/media/getFetch.c780682470504fffbd04.cjs",
     "static/media/arrow_back.svg": "/b2c-web-app/static/media/arrow_back.1c39f672774a9d39b5a6b682825df85f.svg",
     "static/media/expand_more.svg": "/b2c-web-app/static/media/expand_more.8322b254aa7db62c20fde7acc6f5c150.svg",
     "static/media/expand_less.svg": "/b2c-web-app/static/media/expand_less.fce0db3af921868ac2f3adc0e9704c4c.svg",
-    "main.988dcb0c.css.map": "/b2c-web-app/static/css/main.988dcb0c.css.map",
-    "main.3941bff7.js.map": "/b2c-web-app/static/js/main.3941bff7.js.map"
+    "main.7fb3a447.css.map": "/b2c-web-app/static/css/main.7fb3a447.css.map",
+    "main.b14afa51.js.map": "/b2c-web-app/static/js/main.b14afa51.js.map"
   },
   "entrypoints": [
-    "static/css/main.988dcb0c.css",
-    "static/js/main.3941bff7.js"
+    "static/css/main.7fb3a447.css",
+    "static/js/main.b14afa51.js"
   ]
 }
