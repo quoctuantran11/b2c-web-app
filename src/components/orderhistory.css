@@ -3,6 +3,16 @@
     height: 79vmin;
 }
 
+.flag-btn {
+    border: none;
+    background: transparent;
+}
+
+.flag-btn img {
+    width: 30px;
+    height: 30px;
+}
+
 .order-history-header {
     display: inline-flex;
     width: 100%;

@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import { Trans, useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import arrow_back from '../assets/image/arrow_back.svg'
 import search_icon from '../assets/image/search_black.svg'
 import expand_less from '../assets/image/expand_less.svg'
 import expand_more from '../assets/image/expand_more.svg'
+import vn_flag from '../assets/image/vietnam.png'
+import us_flag from '../assets/image/united-states-of-america.png'
 
 function OrderHistory() {
   const [expandItem, setExpandItem] = useState(false)
@@ -43,8 +45,12 @@ function OrderHistory() {
 
   return (
     <div className="order-history-container">
-      <button onClick={() => changeLanguage('vi')}>VI</button>
-      <button onClick={() => changeLanguage('en')}>EN</button>
+      <button className='flag-btn' onClick={() => changeLanguage('vi')}>
+        <img src={vn_flag} alt="vn" />
+      </button>
+      <button className='flag-btn' onClick={() => changeLanguage('en')}>
+        <img src={us_flag} alt="us" />
+      </button>
       <div className='order-history-header'>
         <button>
           <img src={arrow_back} alt="back" />
