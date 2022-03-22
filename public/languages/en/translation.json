@@ -1,9 +1,0 @@
-{
-    "title": "Order history",
-    "navigation": {
-        "new": "New",
-        "inProcess": "In process",
-        "completed": "Completed",
-        "cancelled": "Cancelled"
-      }
-}

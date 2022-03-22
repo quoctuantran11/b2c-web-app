@@ -1,13 +1,13 @@
 import './App.css';
-import './i18n';
+import React from 'react';
 import Header from './reusable/Header';
 import OrderHistory from './components/OrderHistory';
 
 function App() {
   return (
     <div className="App">
-        <Header />
-        <OrderHistory />
+      <Header />
+      <OrderHistory />
     </div>
   );
 }

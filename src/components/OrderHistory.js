@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import arrow_back from '../assets/image/arrow_back.svg'
 import search_icon from '../assets/image/search_black.svg'
 import expand_less from '../assets/image/expand_less.svg'
@@ -11,6 +11,12 @@ function OrderHistory() {
 
   const { t, i18n } = useTranslation()
 
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+
+  /*
+  // Datasets
   const orderDatasets = [
     {
       id: "8550491",
@@ -33,53 +39,33 @@ function OrderHistory() {
       discount: 50000
     }
   ]
-
-  const LanguageSelector = () => {
-
-    const { t, i18n } = useTranslation();
-
-
-    const changeLanguage = (lang) => {
-
-      i18n.changeLanguage(lang);
-
-    };
-
-
-    return (
-      <div>
-        <button onClick={() => changeLanguage('vi')}>VI</button>
-        <button onClick={() => changeLanguage('en')}>EN</button>
-      </div>
-
-    );
-
-  };
+  */
 
   return (
     <div className="order-history-container">
-      <LanguageSelector />
+      <button onClick={() => changeLanguage('vi')}>VI</button>
+      <button onClick={() => changeLanguage('en')}>EN</button>
       <div className='order-history-header'>
         <button>
           <img src={arrow_back} alt="back" />
         </button>
-        <h3>Order history</h3>
+        <h3>{t("title")}</h3>
       </div>
       <div className='order-history-navigation-bar'>
         <ul>
           <li>
-            <button className='navigation-btn-93w'>New</button>
+            <button className='navigation-btn-93w'>{t("navigation.new")}</button>
             <div className='quantity-notification'>1</div>
           </li>
           <li>
-            <button className='navigation-btn-127w'>In process</button>
+            <button className='navigation-btn-127w'>{t("navigation.inProcess")}</button>
             <div className='quantity-notification'>3</div>
           </li>
           <li>
-            <button className='navigation-btn-127w'>Completed</button>
+            <button className='navigation-btn-127w'>{t("navigation.completed")}</button>
           </li>
           <li>
-            <button className='navigation-btn-127w'>Cancelled</button>
+            <button className='navigation-btn-127w'>{t("navigation.cancelled")}</button>
           </li>
         </ul>
       </div>

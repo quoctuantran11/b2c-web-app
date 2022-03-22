@@ -1,8 +1,9 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-
 import Backend from 'i18next-http-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
+
+import lang_en from './locales/en/translation.json'
+import lang_vi from './locales/vi/translation.json'
 // don't want to use this?
 // have a look at the Quick start guide 
 // for passing in lng and translations on init
@@ -12,23 +13,18 @@ i18n
   // learn more: https://github.com/i18next/i18next-http-backend
   // want your translations to be loaded from a professional CDN? => https://github.com/locize/react-tutorial#step-2---use-the-locize-cdn
   .use(Backend)
-  // detect user language
-  // learn more: https://github.com/i18next/i18next-browser-languageDetector
-  .use(LanguageDetector)
   // pass the i18n instance to react-i18next.
   .use(initReactI18next)
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
+    resources: {
+      en: {translation: lang_en},
+      vi: {translation: lang_vi}
+    },
+    lng: 'en',
     fallbackLng: 'en',
     debug: true,
-    backend: {
-      loadPath: '/languages/{{lng}}/translation.json'
-    },
-    detection: {
-      order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain'],
-      caches: ['cookie']
-    },
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
