@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/b2c-web-app/static/css/main.1f952096.css",
-    "main.js": "/b2c-web-app/static/js/main.3612523d.js",
+    "main.css": "/b2c-web-app/static/css/main.4a21c4ec.css",
+    "main.js": "/b2c-web-app/static/js/main.7530b9c5.js",
+    "static/media/united-states-of-america.png": "/b2c-web-app/static/media/united-states-of-america.e926a47c8090a6b9c494.png",
     "index.html": "/b2c-web-app/index.html",
     "static/media/search_black.svg": "/b2c-web-app/static/media/search_black.6c95e853cf5a1eedd6e285cecedda3a3.svg",
     "static/media/search_orange.svg": "/b2c-web-app/static/media/search_orange.a32587a80afbcb33695405beaf8210df.svg",
@@ -9,11 +10,11 @@
     "static/media/arrow_back.svg": "/b2c-web-app/static/media/arrow_back.1c39f672774a9d39b5a6b682825df85f.svg",
     "static/media/expand_more.svg": "/b2c-web-app/static/media/expand_more.8322b254aa7db62c20fde7acc6f5c150.svg",
     "static/media/expand_less.svg": "/b2c-web-app/static/media/expand_less.fce0db3af921868ac2f3adc0e9704c4c.svg",
-    "main.1f952096.css.map": "/b2c-web-app/static/css/main.1f952096.css.map",
-    "main.3612523d.js.map": "/b2c-web-app/static/js/main.3612523d.js.map"
+    "main.4a21c4ec.css.map": "/b2c-web-app/static/css/main.4a21c4ec.css.map",
+    "main.7530b9c5.js.map": "/b2c-web-app/static/js/main.7530b9c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f952096.css",
-    "static/js/main.3612523d.js"
+    "static/css/main.4a21c4ec.css",
+    "static/js/main.7530b9c5.js"
   ]
 }
